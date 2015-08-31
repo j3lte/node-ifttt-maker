@@ -7,8 +7,6 @@
  * Licensed under the MIT license.
  */
 
-// TODO: Make it more flexibel instead of using a callback
-//var Emitter = require('events').EventEmitter;
 var util = require('util');
 var request = require('request');
 
@@ -17,8 +15,6 @@ var BASEURL = 'https://maker.ifttt.com/trigger/%s/with/key/%s';
 var IFTTT = function(secret) {
   this.secret = secret;
 };
-
-//util.inherits(IFTTT, Emitter);
 
 IFTTT.prototype.request = function request(data, callback) {
   if (!this.secret || typeof this.secret !== 'string') {
@@ -37,7 +33,7 @@ IFTTT.prototype.request = function request(data, callback) {
   makeRequest(requestParams, function (err) {
     if (callback) {
       callback(err);
-    } else {
+    } else if (err) {
       throw new Error(err);
     }
   });
