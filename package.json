@@ -1,0 +1,29 @@
+{
+  "name": "node-ifttt-maker",
+  "version": "0.1.0",
+  "description": "NodeJS module that will connect with the IFTTT maker channel",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ifttt",
+    "maker"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/j3lte/node-ifttt-maker"
+  },
+  "engines": {
+    "node": "^0.10"
+  },
+  "readmeFilename": "README.md",
+  "author": {
+    "name": "J.W. Lagendijk",
+    "email": "jwlagendijk@gmail.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "request": "^2.61.0"
+  }
+}

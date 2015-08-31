@@ -1,0 +1,13 @@
+.git*
+docs/
+test.js
+testing.js
+.travis.yml
+.DS_Store
+coverage.html
+lib-cov
+
+.eslintrc
+
+test.js
+
