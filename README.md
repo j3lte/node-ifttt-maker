@@ -15,7 +15,7 @@ It is a simple wrapper for using the Maker channel in IFTTT
 
 
 ```js
-var IFTTT = require('./bin/node-ifttt-maker'),
+var IFTTT = require('node-ifttt-maker'),
     ifttt = new IFTTT('<YOUR MAKER KEY>');
 
 ifttt.request({
