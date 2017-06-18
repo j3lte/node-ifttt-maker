@@ -15,24 +15,45 @@ A simple wrapper that will connect with the [IFTTT maker channel](https://ifttt.
 
 
 ```js
-var IFTTT = require('node-ifttt-maker'),
-    ifttt = new IFTTT('<YOUR MAKER KEY>');
+const IFTTT = require('node-ifttt-maker');
+const ifttt = new IFTTT('<YOUR MAKER KEY>');
 
-ifttt.request({
-    event: 'event',
-    method: 'GET',
-    params: {
-        'value1': 'test',
-        'value2': 2,
-        'value3': {
-            x: 1, y: 2
-        }
+const event = 'eventname';
+
+// Simple request
+ifttt
+  .request(event)
+  .then((response) => {})
+  .catch((err) => {});
+
+// Using POST
+const method = 'POST';
+
+ifttt
+  .request({ event, method })
+  .then((response) => {})
+  .catch((err) => {});
+
+// Adding values (only value1, value2 and value3 are accepted by IFTTT)
+const params = {
+    'value1': 'test',
+    'value2': 2,
+    'value3': {
+        x: 1, y: 2
     }
-}, function (err) {
+}
+
+ifttt
+  .request({ event, params })
+  .then((response) => {})
+  .catch((err) => {});
+
+// The 'old' way of calling Maker using a callback still works
+ifttt.request(event, (err, body) {
     if (err) {
       console.log(err);
     } else {
-      console.log('OK');
+      console.log(body);
     }
 });
 ```
