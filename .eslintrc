@@ -1,11 +1,20 @@
 {
-    "env": {
-        "node": true
-    },
-    "rules": {
-        "quotes": [1, 'single'],
-        "indent": [2, 2],
-        "no-process-exit": [0],
-        "no-unused-expressions": [0]
-    }
+  "extends":"airbnb",
+  "plugins":[
+    "mocha"
+  ],
+  "rules":{
+    "no-console":0,
+    "no-unused-expressions":0,
+    "no-cond-assign":["error", "except-parens"],
+    "mocha/no-exclusive-tests":"error",
+    "no-unused-vars":["error",{"argsIgnorePattern":"[iI]gnored"}]
+  },
+  "globals":{
+    "describe":false,
+    "before":false,
+    "beforeEach":false,
+    "afterEach":false,
+    "it":false
+  }
 }

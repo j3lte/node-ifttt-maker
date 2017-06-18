@@ -1,13 +1,12 @@
 .git*
 docs/
-test.js
-testing.js
 .travis.yml
 .DS_Store
 coverage.html
+coverage/
 lib-cov
 
 .eslintrc
 
 test.js
-
+test/

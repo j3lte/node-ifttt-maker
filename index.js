@@ -1,17 +1,14 @@
-'use strict';
 /*
  * node-ifttt-maker
  * https://github.com/j3lte/node-ifttt-maker
  *
- * Copyright (c) 2015 Jelte Lagendijk
+ * Copyright (c) 2017 Jelte Lagendijk
  * Licensed under the MIT license.
  */
 
-/**
- * Export Node IFTTT Maker
- */
+module.exports = require('./lib/node-ifttt-maker');
 
-exports = module.exports = require('./bin/node-ifttt-maker');
+exports = module.exports;
 
 /**
  * Export the version

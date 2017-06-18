@@ -5,11 +5,7 @@ node-ifttt-maker
 
 [![npm version](https://badge.fury.io/js/node-ifttt-maker.svg)](http://badge.fury.io/js/node-ifttt-maker)
 
-NodeJS module that will connect with the [IFTTT maker channel](https://ifttt.com/maker)
-
-It is a simple wrapper for using the Maker channel in IFTTT
-
-**This is work-in-progress, will build the next version with promises/event emitter**
+A simple wrapper that will connect with the [IFTTT maker channel](https://ifttt.com/maker)
 
 ## Usage
 
@@ -45,7 +41,7 @@ Please, if you find any bugs, or are a way better developer than I am (as in, yo
 
 (The MIT License)
 
-Copyright (c) 2015 Jelte Lagendijk <jwlagendijk@gmail.com>
+Copyright (c) 2017 Jelte Lagendijk <jwlagendijk@gmail.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
