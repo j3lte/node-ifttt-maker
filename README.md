@@ -3,7 +3,11 @@ node-ifttt-maker
 
 [![NPM](https://nodei.co/npm/node-ifttt-maker.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/node-ifttt-maker/)
 
+[![Build Status](https://travis-ci.org/j3lte/node-ifttt-maker.svg?branch=master)](https://travis-ci.org/j3lte/node-ifttt-maker)
+[![DAVID](https://david-dm.org/j3lte/node-ifttt-maker.svg)](https://david-dm.org/j3lte/node-ifttt-maker)
 [![npm version](https://badge.fury.io/js/node-ifttt-maker.svg)](http://badge.fury.io/js/node-ifttt-maker)
+[![Development Dependency Status](https://david-dm.org/j3lte/node-ifttt-maker/dev-status.svg?theme=shields.io)](https://david-dm.org/j3lte/node-ifttt-maker#info=devDependencies)
+[![Code Climate](https://codeclimate.com/github/j3lte/node-ifttt-maker/badges/gpa.svg)](https://codeclimate.com/github/j3lte/node-ifttt-maker)
 
 A simple wrapper that will connect with the [IFTTT maker channel](https://ifttt.com/maker)
 
