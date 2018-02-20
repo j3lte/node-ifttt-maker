@@ -1,6 +1,6 @@
 {
   "name": "node-ifttt-maker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "NodeJS module that will connect with the IFTTT maker channel",
   "main": "index.js",
   "scripts": {
