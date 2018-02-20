@@ -8,7 +8,8 @@
     "no-unused-expressions":0,
     "no-cond-assign":["error", "except-parens"],
     "mocha/no-exclusive-tests":"error",
-    "no-unused-vars":["error",{"argsIgnorePattern":"[iI]gnored"}]
+    "no-unused-vars":["error",{"argsIgnorePattern":"[iI]gnored"}],
+    "strict":0
   },
   "globals":{
     "describe":false,

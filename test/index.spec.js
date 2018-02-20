@@ -3,7 +3,7 @@ const chaiAsPromised = require('chai-as-promised');
 
 chai.use(chaiAsPromised);
 
-const expect = chai.expect;
+const { expect } = chai;
 const nock = require('nock');
 const IFTTT = require('../');
 
